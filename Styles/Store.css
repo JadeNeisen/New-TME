@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 740px) {
+  .FullMenu, .logo {
+    display: none;
+  }
+  body {
+    background-image: url("../Images/TMEStoreMobileBackground.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+  }
+  .MenuImage {
+    position: absolute;
+    left: 70vw;
+    top: 5vh;
+    cursor: pointer;
+  }
+  .MenuImage img {
+    width: 80%;
+  }
+  .DropDown {
+    position: absolute;
+    opacity: 0;
+    top: 15vh;
+    left: 50vw;
+    margin-right: 1%;
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  .DropDown ul {
+    background-color: rgba(0, 0, 0, 0.705);
+    padding: 1%;
+    padding-left: 2%;
+  }
+  .DropDown li {
+    display: block;
+  }
+  .DropDown li img {
+    width: 100%;
+    height: 50px;
+    margin: 1%;
+  }
+  .DropDown.active {
+    position: absolute;
+    opacity: 1;
+    top: 15vh;
+    left: 50vw;
+    margin-right: 1%;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    z-index: 2;
+  }
+  .DropDown.active ul {
+    background-color: rgba(0, 0, 0, 0.705);
+    padding: 1%;
+    padding-left: 2%;
+  }
+  .DropDown.active li {
+    display: block;
+  }
+  .DropDown.active li img {
+    width: 100%;
+    height: 50px;
+    margin: 1%;
+  }
+  .panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    width: 95%;
+    top: 45vh;
+    background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(purple), color-stop(blue), to(green));
+    background-image: linear-gradient(to right, red, purple, blue, green);
+    padding: 2%;
+    font-weight: bold;
+    margin-bottom: 2%;
+    margin-left: 2.5%;
+    z-index: 1;
+  }
+  .panel .StoreInfo {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.795);
+    color: white;
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .panel .header {
+    display: flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 5px #18c508;
+    color: black;
+    padding: 1%;
+  }
+  .panel .header h2 {
+    text-shadow: 1px 1px 5px #fffb00;
+    font-size: 250%;
+  }
+  .panel a {
+    color: #fffb00;
+    font-size: 105%;
+    font-variant: small-caps;
+  }
+  .panel img {
+    width: 70%;
+  }
+  .panel p {
+    padding: 1%;
+  }
+  .panel h3 {
+    text-shadow: 1px 1px 5px #09ff00;
+    font-size: 150%;
+    color: black;
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+}
+
+@media screen and (min-width: 741px) and (max-width: 1369px) {
+  .FullMenu, .logo {
+    display: none;
+  }
+  body {
+    background-image: url("../Images/TMEStoreMobileBackground.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+  }
+  .MenuImage {
+    position: absolute;
+    left: 77vw;
+    top: 3vh;
+    cursor: pointer;
+  }
+  .MenuImage img {
+    width: 70%;
+  }
+  .DropDown {
+    position: absolute;
+    opacity: 0;
+    top: 12vh;
+    left: 65vw;
+    margin-right: 1%;
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  .DropDown ul {
+    background-color: rgba(0, 0, 0, 0.705);
+    padding: 1%;
+    padding-left: 4%;
+  }
+  .DropDown li {
+    display: block;
+  }
+  .DropDown li img {
+    width: 100%;
+    height: 60px;
+    margin: 1%;
+  }
+  .DropDown.active {
+    position: absolute;
+    opacity: 1;
+    top: 12vh;
+    left: 65vw;
+    margin: 1%;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    z-index: 2;
+  }
+  .DropDown.active ul {
+    background-color: rgba(0, 0, 0, 0.705);
+    padding: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .DropDown.active li {
+    display: block;
+  }
+  .DropDown.active li img {
+    width: 100%;
+    height: 60px;
+    margin: 1%;
+  }
+  .panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    width: 95%;
+    top: 45vh;
+    background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(purple), color-stop(blue), to(green));
+    background-image: linear-gradient(to right, red, purple, blue, green);
+    padding: 2%;
+    font-weight: bold;
+    margin-bottom: 2%;
+    margin-left: 2.5%;
+    z-index: 1;
+  }
+  .panel .StoreInfo {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.795);
+    color: white;
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .panel .header {
+    display: flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 5px #18c508;
+    color: black;
+    padding: 1%;
+  }
+  .panel .header h1 {
+    font-size: 350%;
+  }
+  .panel .header h2 {
+    text-shadow: 1px 1px 5px #fffb00;
+    font-size: 300%;
+  }
+  .panel a {
+    color: #fffb00;
+    font-size: 105%;
+    font-variant: small-caps;
+  }
+  .panel img {
+    width: 70%;
+  }
+  .panel p {
+    padding: 1%;
+    font-size: 200%;
+  }
+  .panel h3 {
+    text-shadow: 1px 1px 5px #09ff00;
+    font-size: 250%;
+    color: black;
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  .panel #list {
+    font-size: 150%;
+  }
+  .panel h4 {
+    font-size: 150%;
+  }
+}
+
+@media screen and (min-width: 1370px) {
+  .MobileMenu {
+    display: none;
+  }
+  body {
+    background-color: black;
+    background-image: url("../Images/TMEStoreBackground.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+  }
+  .FullMenu ul {
+    position: absolute;
+    top: 35vh;
+    left: 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 95%;
+  }
+  .FullMenu ul img, .FullMenu ul a {
+    width: 100%;
+    height: 80px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  .panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    width: 95%;
+    top: 45vh;
+    background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(purple), color-stop(blue), to(green));
+    background-image: linear-gradient(to right, red, purple, blue, green);
+    padding: 2%;
+    font-weight: bold;
+    margin-bottom: 2%;
+    margin-left: 2.5%;
+    z-index: 1;
+  }
+  .panel .StoreInfo {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.795);
+    color: white;
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .panel .header {
+    display: flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 5px #18c508;
+    color: black;
+    padding: 1%;
+  }
+  .panel .header h1 {
+    font-size: 450%;
+  }
+  .panel .header h2 {
+    text-shadow: 1px 1px 5px #fffb00;
+    font-size: 350%;
+  }
+  .panel a {
+    color: #fffb00;
+    font-size: 105%;
+    font-variant: small-caps;
+    -webkit-transition: all .05s;
+    transition: all .05s;
+  }
+  .panel img {
+    width: 50%;
+    -webkit-transition: all .05s ease-in-out;
+    transition: all .05s ease-in-out;
+  }
+  .panel p {
+    padding: 1%;
+    font-size: 200%;
+  }
+  .panel h3 {
+    text-shadow: 1px 1px 5px #09ff00;
+    font-size: 350%;
+    color: black;
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  .panel #list {
+    font-size: 150%;
+  }
+  .panel h4 {
+    font-size: 200%;
+  }
+  .logo img {
+    position: absolute;
+    width: 35%;
+    left: 5vw;
+  }
+  .FullMenu img:hover, img:focus, img:hover, img:focus {
+    -webkit-filter: brightness(180%);
+            filter: brightness(180%);
+  }
+}
+/*# sourceMappingURL=Store.css.map */

@@ -1,0 +1,63 @@
+// Base Style
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width:740px){
+    body{
+        background-image: url("../Images/TMELandingMobile.png");
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 100vw 100vh;
+    }
+    .Enter{
+        position: absolute;
+        top: 10vh;
+        left: 5vw;
+        img{
+            width: 85%;
+        }
+    }
+}
+@media screen and (min-width:741px) and (max-width:1369px){
+    body{
+        background-image: url("../Images/TMELandingMobile.png");
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 100vw 100vh;
+    }
+    .Enter{
+        position: absolute;
+        top: 10vh;
+        left: 8vw;
+        img{
+            width: 85%;
+        }
+    }
+}
+@media screen and (min-width: 1370px){
+    body{
+        background-image: url("../Images/TMEBackground.png");
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 100vw 100vh;
+    }
+    .Enter{
+        position: absolute;
+        top: 72vh;
+        left: 10vw;
+        img{
+            transition: all .5s ease-in-out;
+        }
+    }
+    img:hover, img:focus{
+        filter: brightness(180%);
+    }
+}
