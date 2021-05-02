@@ -74,65 +74,31 @@ ul{
         }
     }
     
-    .panel{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: absolute;
-        width: 95%;
-        top: 45vh;
-        background-image: linear-gradient(to right, red, purple, blue, green);
-        padding: 2%;
-        font-weight: bold;
-        margin-bottom: 2%;
-        margin-left: 2.5%;
-        z-index: 1;
-        .StoreInfo{
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.795);
-            color: white;
-            padding: 1%;
-            padding-top: 2%;
-            padding-bottom: 2%;
-        }
-        .header{
-            display: flexbox;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            text-align: center;
-            text-shadow: 1px 1px 5px rgb(24, 197, 8);
-            color: rgb(0, 0, 0);
-            padding: 1%;
-            h2{
-                text-shadow: 1px 1px 5px rgb(255, 251, 0);
-                font-size: 250%;
-            }
-        }
-        a{
-            color: rgb(255, 251, 0);
-            font-size: 105%;
-            font-variant: small-caps;
-        }
+   .Panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 95%;
+    top: 45vh;
+    background-image: linear-gradient(to right, red, purple, blue, green);
+    padding: 2%;
+    font-weight: bold;
+    margin-bottom: 2%;
+    margin-left: 2.5%;
+    z-index: 1;
+    section{
+        width: 100%;
+        margin-left: 2%;
         img{
-            width: 70%;
-        }
-        p{
-            padding: 1%;
-        }
-        h3{
-            text-shadow: 1px 1px 5px rgb(9, 255, 0);
-            font-size: 150%;
-            color: black;
-            text-align: center;
-            padding: 1%;
-            margin-bottom: 1%;
+            width: 97%;
+            background-color: rgba(0, 0, 0, 0.795);
+            padding: 2%;
         }
     }
-   
 
+}
 }
 @media screen and (min-width:741px) and (max-width:1369px){
     .FullMenu, .logo{
@@ -201,7 +167,7 @@ ul{
             }
         }
     }
-    .panel{
+    .Panel{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -215,57 +181,14 @@ ul{
         margin-bottom: 2%;
         margin-left: 2.5%;
         z-index: 1;
-        .StoreInfo{
+        section{
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.795);
-            color: white;
-            padding: 1%;
-            padding-top: 2%;
-            padding-bottom: 2%;
-        }
-        .header{
-            display: flexbox;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            text-align: center;
-            text-shadow: 1px 1px 5px rgb(24, 197, 8);
-            color: rgb(0, 0, 0);
-            padding: 1%;
-            h1{
-                font-size: 350%;
+            margin-left: 2%;
+            img{
+                width: 97%;
+                background-color: rgba(0, 0, 0, 0.795);
+                padding: 2%;
             }
-            h2{
-                text-shadow: 1px 1px 5px rgb(255, 251, 0);
-                font-size: 300%;
-            }
-        }
-        a{
-            color: rgb(255, 251, 0);
-            font-size: 105%;
-            font-variant: small-caps;
-        }
-        img{
-            width: 70%;
-        }
-        p{
-            padding: 1%;
-            font-size: 200%;
-        }
-        h3{
-            text-shadow: 1px 1px 5px rgb(9, 255, 0);
-            font-size: 250%;
-            color: black;
-            text-align: center;
-            padding: 1%;
-            margin-bottom: 1%;
-        }
-        #list{
-            font-size: 150%;
-        }
-        h4{
-            font-size: 150%;
         }
     }
 }
@@ -275,7 +198,7 @@ ul{
     }
     body{
         background-color: black;
-        background-image: url("../Images/TMEStoreBackground.png");
+        background-image: url("../Images/TMEAboutBackground.png");
         background-position: top left;
         background-repeat: no-repeat;
         background-size: 100vw 100vh;
@@ -296,11 +219,11 @@ ul{
             transition: all .5s ease-in-out;
         }
     }
-    .panel{
+    .Panel{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         position: absolute;
         width: 95%;
         top: 45vh;
@@ -310,68 +233,17 @@ ul{
         margin-bottom: 2%;
         margin-left: 2.5%;
         z-index: 1;
-        .StoreInfo{
+        section{
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.795);
-            color: white;
-            padding: 1%;
-            padding-top: 2%;
-            padding-bottom: 2%;
-        }
-        .header{
-            display: flexbox;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            text-align: center;
-            text-shadow: 1px 1px 5px rgb(24, 197, 8);
-            color: rgb(0, 0, 0);
-            padding: 1%;
-            h1{
-                font-size: 450%;
-            }
-            h2{
-                text-shadow: 1px 1px 5px rgb(255, 251, 0);
-                font-size: 350%;
+            margin-left: 1%;
+            img{
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.795);
+                padding: 2%;
             }
         }
-        a{
-            color: rgb(255, 251, 0);
-            font-size: 105%;
-            font-variant: small-caps;
-            transition: all .05s;
-        }
-        img{
-            width: 50%;
-            transition: all .05s ease-in-out;
-        }
-        p{
-            padding: 1%;
-            font-size: 200%;
-        }
-        h3{
-            text-shadow: 1px 1px 5px rgb(9, 255, 0);
-            font-size: 350%;
-            color: black;
-            text-align: center;
-            padding: 1%;
-            margin-bottom: 1%;
-        }
-        #list{
-            font-size: 150%;
-        }
-        h4{
-            font-size: 200%;
-        }
-    }
-    .logo img{
-        position: absolute;
-        width: 35%;
-        left: 5vw;
-    }
-    .FullMenu img:hover, img:focus, img:hover, img:focus{
-        filter: brightness(180%);
-    }
-    
+}
+.FullMenu img:hover, img:focus, img:hover, img:focus{
+    filter: brightness(180%);
+}
 }
