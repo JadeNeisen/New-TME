@@ -1,0 +1,524 @@
+// Base Styles
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+@media screen and (max-width:740px){
+    .FullMenu, .logo{
+        display: none;
+    }
+    body{
+        background-image: url("../Images/TMEAboutMobile.png");
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-attachment: fixed;
+        background-size: 100vw 100vh;
+    }
+    .MenuImage{
+        position: absolute;
+        left: 70vw;
+        top: 5vh;
+        cursor: pointer;
+        img{
+            width: 80%;
+        }
+    }
+    .DropDown{
+        position: absolute;
+        opacity: 0;
+        top: 15vh;
+        left: 50vw;
+        margin-right: 1%;
+        transition: all .7s ease-in-out;
+        transform: translateY(0px) ;
+        ul{
+            background-color: rgba(0, 0, 0, 0.705);
+            padding: 1%;
+            padding-left: 2%;
+        }
+            li{
+            display: block;
+            img{
+                width: 100%;
+                height: 50px;
+                margin: 1%;
+            }
+        }
+    }
+    .DropDown.active{
+        position: absolute;
+        opacity: 1;
+        top: 15vh;
+        left: 50vw;
+        margin-right: 1%;
+        transition: all .3s ease-in-out;
+        transform: translateY(10px) ;
+        z-index: 2;
+        ul{
+            background-color: rgba(0, 0, 0, 0.705);
+            padding: 1%;
+            padding-left: 2%;
+        }
+            li{
+            display: block;
+            img{
+                width: 100%;
+                height: 50px;
+                margin: 1%;
+            }
+        }
+    }
+    .InfoPanel{
+        position: relative;
+        top: 45vh;
+        left: 2.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-variant: small-caps;
+        width: 95%;
+        height: 26vh;
+        border: solid 2px black;
+        h1{
+            color: black;
+            font-weight: bold;
+            text-shadow: 2px 2px 3px rgb(3, 180, 3);
+            text-align: center;
+            font-size: 110%;
+        }
+        .ChannelLinks{
+            display: flexbox;
+            flex-direction: row;
+            margin-left: 7%;
+            width: 90%;
+            img{
+                width: 25%;
+                margin: 2%;
+            }
+            section{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                font-size: 65%;
+                margin-right: 5%;
+                font-variant: small-caps;}
+                color: rgb(253, 252, 251);
+                margin-bottom: 3%;
+                margin-right: 3%;
+                h2{
+                    text-shadow: 1px 1px 2px rgb(5, 139, 139);
+                    color: black;
+                }
+                h4{
+                    text-align: center;
+                }
+        }
+
+    }
+    .MerchPanel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        width: 95%;
+        top: 71vh;
+        background-image: linear-gradient(to right, red, purple, blue, green);
+        padding: 2%;
+        font-weight: bold;
+        margin-bottom: 2%;
+        margin-left: 2.5%;
+        z-index: 1;
+        .StoreInfo{
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.795);
+            color: white;
+            padding: 1%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+        .header{
+            display: flexbox;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            text-shadow: 1px 1px 5px rgb(24, 197, 8);
+            color: rgb(0, 0, 0);
+            padding: 1%;
+            h2{
+                text-shadow: 1px 1px 5px rgb(255, 251, 0);
+                font-size: 250%;
+            }
+        }
+        a{
+            color: rgb(255, 251, 0);
+            font-size: 105%;
+            font-variant: small-caps;
+        }
+        img{
+            width: 70%;
+        }
+        p{
+            padding: 1%;
+        }
+        h3{
+            text-shadow: 1px 1px 5px rgb(9, 255, 0);
+            font-size: 150%;
+            color: black;
+            text-align: center;
+            padding: 1%;
+            margin-bottom: 1%;
+        }
+    }
+}
+@media screen and (min-width:741px) and (max-width:1369px){
+    .FullMenu, .logo{
+        display: none;
+    }
+    body{
+        background-image: url("../Images/TMEAboutTablet.png");
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-attachment: fixed;
+        background-size: 100vw 100vh;
+    }
+    .MenuImage{
+        position: absolute;
+        left: 77vw;
+        top: 3vh;
+        cursor: pointer;
+        img{
+            width: 70%;
+        }
+    }
+    .DropDown{
+        position: absolute;
+        opacity: 0;
+        top: 12vh;
+        left: 65vw;
+        margin-right: 1%;
+        transition: all .7s ease-in-out;
+        transform: translateY(0px) ;
+        ul{
+            background-color: rgba(0, 0, 0, 0.705);
+            padding: 1%;
+            padding-left: 4%;
+        }
+            li{
+            display: block;
+            img{
+                width: 100%;
+                height: 60px;
+                margin: 1%;
+            }
+        }
+    }
+    .DropDown.active{
+        position: absolute;
+        opacity: 1;
+        top: 12vh;
+        left: 65vw;
+        margin: 1%;
+        transition: all .3s ease-in-out;
+        transform: translateY(10px) ;
+        z-index: 2;
+        ul{
+            background-color: rgba(0, 0, 0, 0.705);
+            padding: 1%;
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+            li{
+            display: block;
+            img{
+                width: 100%;
+                height: 60px;
+                margin: 1%;
+            }
+        }
+    }
+    .InfoPanel{
+        position: relative;
+        top: 48vh;
+        left: 2.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-variant: small-caps;
+        width: 95%;
+        height: 30vh;
+        border: solid 2px black;
+        h1{
+            color: black;
+            font-weight: bold;
+            text-shadow: 2px 2px 3px rgb(3, 180, 3);
+            text-align: center;
+            font-size: 210%;
+        }
+        .ChannelLinks{
+            display: flexbox;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 7%;
+            width: 90%;
+            img{
+                width: 25%;
+                margin: 2%;
+            }
+            section{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                font-size: 100%;
+                margin-right: 5%;
+                font-variant: small-caps;}
+                color: rgb(253, 252, 251);
+                margin-bottom: 3%;
+                margin-right: 3%;
+                h2{
+                    text-shadow: 1px 1px 2px rgb(5, 139, 139);
+                    color: black;
+                }
+                h4{
+                    text-align: center;
+                }
+        }
+
+    }
+    .MerchPanel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        width: 95%;
+        top: 78vh;
+        background-image: linear-gradient(to right, red, purple, blue, green);
+        padding: 2%;
+        font-weight: bold;
+        margin-bottom: 2%;
+        margin-left: 2.5%;
+        z-index: 1;
+        .StoreInfo{
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.795);
+            color: white;
+            padding: 1%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+        .header{
+            display: flexbox;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            text-shadow: 1px 1px 5px rgb(24, 197, 8);
+            color: rgb(0, 0, 0);
+            padding: 1%;
+            h1{
+                font-size: 350%;
+            }
+            h2{
+                text-shadow: 1px 1px 5px rgb(255, 251, 0);
+                font-size: 300%;
+            }
+        }
+        a{
+            color: rgb(255, 251, 0);
+            font-size: 105%;
+            font-variant: small-caps;
+        }
+        img{
+            width: 70%;
+        }
+        p{
+            padding: 1%;
+            font-size: 200%;
+        }
+        h3{
+            text-shadow: 1px 1px 5px rgb(9, 255, 0);
+            font-size: 250%;
+            color: black;
+            text-align: center;
+            padding: 1%;
+            margin-bottom: 1%;
+        }
+        #list{
+            font-size: 150%;
+        }
+        h4{
+            font-size: 150%;
+        }
+    }
+}
+@media screen and (min-width:1370px) {
+    .MobileMenu{
+        display: none;
+    }
+    body{
+        background-color: black;
+        background-image: url("../Images/TMEAboutBackground.png");
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        background-attachment: fixed;
+    }
+    .FullMenu ul{
+        position: absolute;
+        top: 35vh;
+        left: 2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 95%;
+        img, a{
+            width: 100%;
+            height: 80px;
+            transition: all .5s ease-in-out;
+        }
+    }
+    .InfoPanel{
+        position: relative;
+        top: 45vh;
+        left: 2.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-variant: small-caps;
+        width: 95%;
+        height: 80vh;
+        border: solid 2px black;
+        h1{
+            color: black;
+            font-weight: bold;
+            text-shadow: 2px 2px 3px rgb(3, 180, 3);
+            text-align: center;
+            font-size: 510%;
+        }
+        .ChannelLinks{
+            display: flexbox;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 10%;
+            width: 90%;
+            img{
+                width: 25%;
+                margin: 2%;
+                transition: all .5s ease-in-out;
+            }
+            section{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                font-size: 200%;
+                margin-right: 5%;
+                font-variant: small-caps;}
+                color: rgb(253, 252, 251);
+                margin-bottom: 3%;
+                margin-right: 3%;
+                h2{
+                    text-shadow: 1px 1px 2px rgb(5, 139, 139);
+                    color: black;
+                    font-size: 200%;
+                }
+                h3{
+                    font-size: 150%;
+                }
+                h4{
+                    text-align: center;
+                    font-size: 150%;
+                    margin-right: 7%;
+                }
+        }
+
+    }
+    .MerchPanel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        width: 95%;
+        top: 123vh;
+        background-image: linear-gradient(to right, red, purple, blue, green);
+        padding: 2%;
+        font-weight: bold;
+        margin-bottom: 2%;
+        margin-left: 2.5%;
+        z-index: 1;
+        .StoreInfo{
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.795);
+            color: white;
+            padding: 1%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+        .header{
+            display: flexbox;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            text-shadow: 1px 1px 5px rgb(24, 197, 8);
+            color: rgb(0, 0, 0);
+            padding: 1%;
+            h1{
+                font-size: 450%;
+            }
+            h2{
+                text-shadow: 1px 1px 5px rgb(255, 251, 0);
+                font-size: 350%;
+            }
+        }
+        a{
+            color: rgb(255, 251, 0);
+            font-size: 105%;
+            font-variant: small-caps;
+            transition: all .05s;
+        }
+        img{
+            width: 50%;
+            transition: all .05s ease-in-out;
+        }
+        p{
+            padding: 1%;
+            font-size: 200%;
+        }
+        h3{
+            text-shadow: 1px 1px 5px rgb(9, 255, 0);
+            font-size: 350%;
+            color: black;
+            text-align: center;
+            padding: 1%;
+            margin-bottom: 1%;
+        }
+        #list{
+            font-size: 150%;
+        }
+        h4{
+            font-size: 200%;
+        }
+    }
+    .FullMenu img:hover, img:focus, img:hover, img:focus{
+        filter: brightness(180%);
+    }
+}

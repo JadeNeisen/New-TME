@@ -1,0 +1,194 @@
+// Base Styles
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+@media screen and (max-width:740px){
+    .FullMenu, .logo{
+        display: none;
+    }
+    body{
+        background-image: url("../Images/TMEGalleryMobile.png");
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-attachment: fixed;
+        background-size: 100vw 100vh;
+    }
+    .MenuImage{
+        position: absolute;
+        left: 70vw;
+        top: 5vh;
+        cursor: pointer;
+        img{
+            width: 80%;
+        }
+    }
+    .DropDown{
+        position: absolute;
+        opacity: 0;
+        top: 15vh;
+        left: 50vw;
+        margin-right: 1%;
+        transition: all .7s ease-in-out;
+        transform: translateY(0px) ;
+        ul{
+            background-color: rgba(0, 0, 0, 0.705);
+            padding: 1%;
+            padding-left: 2%;
+        }
+            li{
+            display: block;
+            img{
+                width: 100%;
+                height: 50px;
+                margin: 1%;
+            }
+        }
+    }
+    .DropDown.active{
+        position: absolute;
+        opacity: 1;
+        top: 15vh;
+        left: 50vw;
+        margin-right: 1%;
+        transition: all .3s ease-in-out;
+        transform: translateY(10px) ;
+        z-index: 2;
+        ul{
+            background-color: rgba(0, 0, 0, 0.705);
+            padding: 1%;
+            padding-left: 2%;
+        }
+            li{
+            display: block;
+            img{
+                width: 100%;
+                height: 50px;
+                margin: 1%;
+            }
+        }
+    }
+}
+@media screen and (min-width:741px) and (max-width:1369px){
+    .FullMenu, .logo{
+        display: none;
+    }
+    body{
+        background-image: url("../Images/TMEGalleryTablet.png");
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-attachment: fixed;
+        background-size: 100vw 100vh;
+    }
+    .MenuImage{
+        position: absolute;
+        left: 77vw;
+        top: 3vh;
+        cursor: pointer;
+        img{
+            width: 70%;
+        }
+    }
+    .DropDown{
+        position: absolute;
+        opacity: 0;
+        top: 12vh;
+        left: 65vw;
+        margin-right: 1%;
+        transition: all .7s ease-in-out;
+        transform: translateY(0px) ;
+        ul{
+            background-color: rgba(0, 0, 0, 0.705);
+            padding: 1%;
+            padding-left: 4%;
+        }
+            li{
+            display: block;
+            img{
+                width: 100%;
+                height: 60px;
+                margin: 1%;
+            }
+        }
+    }
+    .DropDown.active{
+        position: absolute;
+        opacity: 1;
+        top: 12vh;
+        left: 65vw;
+        margin: 1%;
+        transition: all .3s ease-in-out;
+        transform: translateY(10px) ;
+        z-index: 2;
+        ul{
+            background-color: rgba(0, 0, 0, 0.705);
+            padding: 1%;
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+            li{
+            display: block;
+            img{
+                width: 100%;
+                height: 60px;
+                margin: 1%;
+            }
+        }
+    }
+}
+@media screen and (min-width:1370px) {
+    .MobileMenu{
+        display: none;
+    }
+    body{
+        background-color: black;
+        background-image: url("../Images/TMEGalleryBackground.png");
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        background-attachment: fixed;
+    }
+    .FullMenu ul{
+        position: absolute;
+        top: 35vh;
+        left: 2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 95%;
+        img, a{
+            width: 100%;
+            height: 80px;
+            transition: all .5s ease-in-out;
+        }
+    }
+    .Gallery-Container{
+        position: absolute;
+        top: 48vh;
+        background-color: rgba(0, 0, 0, 0.705);
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 2.5%;
+        img{
+            width: 20%;
+            padding: 2%;
+            margin-left: 9.5%;
+            transition: all .5s ease-in-out;
+        }
+        
+        
+    }
+    .FullMenu img:hover, img:focus, img:hover, img:focus{
+        filter: brightness(180%);
+    }
+}
