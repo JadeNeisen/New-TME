@@ -12,7 +12,7 @@ ul{
         display: none;
     }
     body{
-        background-image: url("../Images/TMEAboutMobileBackground.png");
+        background-image: url("../Images/TMEAboutMobile.png");
         background-color: black;
         background-repeat: no-repeat;
         background-position: top left;
@@ -185,7 +185,7 @@ ul{
         display: none;
     }
     body{
-        background-image: url("../Images/TMEAboutMobileBackground.png");
+        background-image: url("../Images/TMEAboutTablet.png");
         background-color: black;
         background-repeat: no-repeat;
         background-position: top left;
@@ -249,7 +249,7 @@ ul{
     }
     .InfoPanel{
         position: relative;
-        top: 45vh;
+        top: 48vh;
         left: 2.5vw;
         display: flex;
         flex-direction: column;
