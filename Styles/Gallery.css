@@ -79,6 +79,36 @@ ul {
     height: 50px;
     margin: 1%;
   }
+  .Gallery-Container {
+    position: absolute;
+    top: 48vh;
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 2.5%;
+  }
+  .Gallery-Container img {
+    width: 98%;
+    padding: 2%;
+    margin-left: 1.5%;
+  }
+  .Gallery-Container p {
+    color: green;
+    margin-left: 2%;
+    padding: 2%;
+  }
 }
 
 @media screen and (min-width: 741px) and (max-width: 1369px) {
@@ -86,7 +116,7 @@ ul {
     display: none;
   }
   body {
-    background-image: url("../Images/TMEGalleryTablet.png");
+    background-image: url("../Images/TMEStoreTablet.png");
     background-color: black;
     background-repeat: no-repeat;
     background-position: top left;
@@ -152,6 +182,46 @@ ul {
     height: 60px;
     margin: 1%;
   }
+  .Gallery-Container {
+    position: absolute;
+    top: 48vh;
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 2.5%;
+  }
+  .Gallery-Container div {
+    display: flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .Gallery-Container img {
+    width: 31%;
+    padding: 2%;
+    margin-left: 1.5%;
+  }
+  .Gallery-Container p {
+    color: green;
+    margin-left: 2%;
+    padding: 2%;
+  }
+  .Gallery-Container .Emotes img {
+    width: 20%;
+  }
 }
 
 @media screen and (min-width: 1370px) {
@@ -199,10 +269,10 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -211,12 +281,27 @@ ul {
             align-items: center;
     margin-left: 2.5%;
   }
+  .Gallery-Container div {
+    display: flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   .Gallery-Container img {
     width: 20%;
     padding: 2%;
     margin-left: 9.5%;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
+  }
+  .Gallery-Container p {
+    color: green;
+    margin-left: 2%;
+    padding: 2%;
+  }
+  .Gallery-Container .Emotes img {
+    width: 15%;
   }
   .FullMenu img:hover, img:focus, img:hover, img:focus {
     -webkit-filter: brightness(180%);
