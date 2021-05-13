@@ -109,6 +109,13 @@ ul {
     margin-left: 2%;
     padding: 2%;
   }
+  .Gallery-Container h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+    text-shadow: 2px 2px 3px green;
+    font-size: 200%;
+  }
 }
 
 @media screen and (min-width: 741px) and (max-width: 1369px) {
@@ -222,6 +229,13 @@ ul {
   .Gallery-Container .Emotes img {
     width: 20%;
   }
+  .Gallery-Container h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+    text-shadow: 2px 2px 3px green;
+    font-size: 300%;
+  }
 }
 
 @media screen and (min-width: 1370px) {
@@ -302,6 +316,13 @@ ul {
   }
   .Gallery-Container .Emotes img {
     width: 15%;
+  }
+  .Gallery-Container h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+    text-shadow: 2px 2px 3px green;
+    font-size: 500%;
   }
   .FullMenu img:hover, img:focus, img:hover, img:focus {
     -webkit-filter: brightness(180%);
